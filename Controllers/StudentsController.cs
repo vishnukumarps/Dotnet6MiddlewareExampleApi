@@ -11,6 +11,7 @@ namespace Dotnet6MiddlewareExampleApi.Controllers
     public class StudentsController : ControllerBase
     {
         [MyCustomAttribute2]
+        
         [HttpPost]
         public IActionResult AddStudent([FromBody] Student student)
         {
